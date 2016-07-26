@@ -16,7 +16,7 @@ from motor  import motor_tornado
 from bson import ObjectId
 from tornado.gen import coroutine
 
-client = motor_tornado.MotorClient('localhost',27017)
+client = motor_tornado.MotorClient('192.168.2.14',27017)
 db=client.test_database;
 
 
