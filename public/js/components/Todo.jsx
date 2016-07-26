@@ -9,7 +9,7 @@ class Todo extends React.Component {
 	constructor(props) {
     	super(props);
     	this.state = {todos : []};
-        this.addTodo=this.addTodo.bind(this);
+        //this.addTodo=this.addTodo.bind(this);
         this.deleteTodo=this.deleteTodo.bind(this);
         this.updateTodo=this.updateTodo.bind(this);
 	}
@@ -26,7 +26,7 @@ class Todo extends React.Component {
         }.bind(this))
     }
     
-    addTodo (content){
+    addTodo(content){
         $.ajax({
             type : 'post',
             url : '/api/todo',
